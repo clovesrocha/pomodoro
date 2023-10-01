@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pomodoro {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+.form-timer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.input-content {
+    margin-bottom: 2rem;
+}
+
+.input-content label {
+    margin-bottom: 0.5rem;
+}
+
+.input-content input {
+    border-radius: 1rem;
+    padding: .4rem;
+}
+
+#study-hours, #study-minutes {
+    width: 80vw;
+}
+
+.timer {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.hours, .minutes, .timer span {
+    margin-right: .5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .time-btn,#start-button, #stop-button, #reset-button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+#rest-message {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
