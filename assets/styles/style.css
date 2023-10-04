@@ -2,21 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Khand', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #637C8E, transparent);
+    background-repeat: none;
 }
 
 #pomodoro {
     margin-top: 3rem;
     font-size: 1.2rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    font-size: 20px;
+    display: flex;
+    
 }
 
 .form-timer {
     display: flex;
+    gap: 0px 15px;
     text-align: center;
-    flex-direction: column;
+    justify-content: center;
 }
 
 .input-content {
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .input-content label {
@@ -27,9 +45,12 @@
     border-radius: 1rem;
     padding: .4rem;
 }
-
-#study-hours, #study-minutes {
-    width: 80vw;
+label{
+    font-size: 25px;
+}
+#study-hours,
+#study-minutes {
+    width: 15vw;
 }
 
 .timer {
@@ -41,16 +62,34 @@
     font-size: 4rem;
 }
 
-.hours, .minutes, .timer span {
+.hours,
+.minutes,
+.timer span {
     margin-right: .5rem;
 }
 
 .controls {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 20px;
+    
 }
 
- .time-btn,#start-button, #stop-button, #reset-button {
+.time-btn{
+    font-weight: bolder;
+    background-color: transparent;
+    margin: 40px 0px 0px 15px;
+    border: none;
+    cursor: pointer;
+}
+.time-btn:hover, .butonsPlay:hover{
+    color:blueviolet;
+}
+#start-button,
+#stop-button,
+#reset-button {
     background-color: transparent;
     border: none;
     font-weight: bold;
@@ -63,4 +102,164 @@
 
 .hidden {
     display: none;
+}
+
+.headerAboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bodyAboutUs {
+    margin-top: 70px;
+    display: flex;
+    gap: 0px 30px;
+
+}
+
+.styleP {
+
+    font-size: 20px;
+    margin-bottom: 10vh;
+    text-align: justify;
+}
+
+.registrationLabel{
+    font-size: 15px;
+    text-align: center;
+}
+h2,
+h1 {
+    text-align: center;
+    
+}
+
+.teamMembers {
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    background-color: #637C8E;
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+.imgMembers {
+    border-radius: 50%;
+}
+
+.location {
+    height: 90vh;
+}
+
+.locationContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #637C8E;
+}
+.txtEquipe{
+    text-align: center;
+    font-size: 25px;
+}
+footer p {
+    color: white;
+}
+
+@media(max-width:993px){
+   .mapsSize{
+    width: 400px;
+    height: 250px;
+   }
+   h2{
+    text-align: center;
+    font-size: 25px;
+   }
+}
+@media(max-width:768px){
+    .mapsSize{
+        width: 300px;
+        height: 200px;
+       }
+
+    h2{
+        text-align: center;
+        font-size: 20px;
+       }
+
+}
+
+@media(max-width:550px){
+
+    .bodyAboutUs {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+       
+    
+    }
+    .bodyAboutUs img{
+        display: none;
+    }
+
+    .locationContent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+
+}
+ .styleP, h2{
+    font-size: 20px;
+    margin:0 20px 0px 20px;
+    text-align: justify;
+ }
+
+}
+
+@media(max-width:465px){
+    
+    .membersGroup .col-6 {
+        width: 100%;
+        margin-right: 0; 
+    }
+   
+
+
+    .form-timer {
+        gap: 10px;
+    }
+
+    .time-btn{
+       
+        margin-left: 0px;
+    }
+    label{
+        font-size: 20px;
+    }
+
+    .text-input{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media(max-width:334px){
+    .cronometro{
+        font-size: 50px;
+    }
+    .controls{
+        gap: 40px;
+    }
 }
